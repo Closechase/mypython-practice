@@ -1,0 +1,77 @@
+#1
+print("You've successfully run some Python code")
+print("Congratulations!")
+print("Now this is what I call ")
+
+#2
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex1 import *
+# create a variable called color with an appropriate value on the line below
+# (Remember, strings in Python must be enclosed in 'single' or "double" quotes)
+color="blue"
+# Check your answer
+q0.check()
+
+#3
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex1 import *
+pi = 3.14159 # approximate
+diameter = 3
+
+# Create a variable called 'radius' equal to half the diameter
+radius=diameter/2
+# Create a variable called 'area', using the formula for the area of a circle: pi times the radius squared
+area=pi*radius*radius
+# Check your answer
+q1.check()
+
+Operator	Name	Description
+a + b	Addition	Sum of a and b
+a - b	Subtraction	Difference of a and b
+a * b	Multiplication	Product of a and b
+a / b	True division	Quotient of a and b
+a // b	Floor division	Quotient of a and b, removing fractional parts
+a % b	Modulus	Integer remainder after division of a by b
+a ** b	Exponentiation	a raised to the power of b
+-a	Negation	The negative of a
+
+#4
+########### Setup code - don't touch this part ######################
+# If you're curious, these are examples of lists. We'll talk about 
+# them in depth a few lessons from now. For now, just know that they're
+# yet another type of Python object, like int or float.
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex1 import *
+a = [1, 2, 3]
+b = [3, 2, 1]
+q2.store_original_ids()
+######################################################################
+c=[]
+c=a
+a=b
+b=c
+# Your code goes here. Swap the values to which a and b refer.
+# If you get stuck, you can always uncomment one or both of the lines in
+# the next cell for a hint, or to peek at the solution.
+
+######################################################################
+
+# Check your answer
+q2.check()
+#5
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex1 import *
+(8 - 3) *( 2- (1 + 1))
+#6
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex1 import *
+alice_candies = 121
+bob_candies = 77
+carol_candies = 109
+
+# Your code goes here! Replace the right-hand side of this assignment with an expression
+# involving alice_candies, bob_candies, and carol_candies
+to_smash = ((alice_candies+bob_candies+carol_candies)%3)
+
+# Check your answer
+q4.check()
