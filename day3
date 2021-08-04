@@ -44,3 +44,13 @@ The area of Finland is 338,000 km²
 The area of Greenland is 2,166,000 km²
 
 (We'll talk about how we would get the commas later when we talk about string formatting :))
+
+#3
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex2 import *
+def f(x):
+    y=abs(x)
+    return y
+
+print(f(5))
+
