@@ -368,6 +368,7 @@ print(
     least_difference(5, 6, 7),
 )
 None None None
+
 Python allows us to define such functions. The result of calling them is the special value None. (This is similar to the concept of "null" in other languages.)
 
 Without a return statement, least_difference is completely pointless, but a function with side effects may do something useful without returning anything. We've already seen two examples of this: print() and help() don't return anything. We only call them for their side effects (putting some text on the screen). Other examples of useful side effects include writing to a file, or modifying an input.
@@ -375,6 +376,8 @@ Without a return statement, least_difference is completely pointless, but a func
 mystery = print()
 print(mystery)
 None
+
+
 Default arguments
 When we called help(print), we saw that the print function has several optional arguments. For example, we can specify a value for sep to put some special string in between our printed arguments:
 
