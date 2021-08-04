@@ -1,0 +1,46 @@
+#1
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex2 import *
+#print('Setup complete.')
+def round_to_two_places(num):
+    return round(num,2)
+    """Return the given number rounded to two decimal places. 
+    
+    >>> round_to_two_places(3.14159)
+    3.14
+    """
+    # Replace this body with your own code.
+    # ("pass" is a keyword that does literally nothing. We used it as a placeholder
+    # because after we begin a code block, Python requires at least one line of code)
+    pass
+
+# Check your answer
+q1.check()
+
+#2
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex2 import *
+def to_smash(total_candies,d=3):
+    return total_candies% d
+    """Return the number of leftover candies that must be smashed after distributing
+    the given number of candies evenly between 3 friends.
+    
+    >>> to_smash(91)
+    1
+    """
+to_smash(91)
+to_smash(91,6)
+# Check your answer
+q3.check()
+
+As you've seen, ndigits=-1 rounds to the nearest 10, ndigits=-2 rounds to the nearest 100 and so on. Where might this be useful? Suppose we're dealing with large numbers:
+
+The area of Finland is 338,424 km²
+The area of Greenland is 2,166,086 km²
+
+We probably don't care whether it's really 338,424, or 338,425, or 338,177. All those digits of accuracy are just distracting. We can chop them off by calling round() with ndigits=-3:
+
+The area of Finland is 338,000 km²
+The area of Greenland is 2,166,000 km²
+
+(We'll talk about how we would get the commas later when we talk about string formatting :))
