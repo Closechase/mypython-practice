@@ -54,3 +54,21 @@ def f(x):
 
 print(f(5))
 
+#4
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex2 import *
+def round_to_two_places(num):
+     return round(num,2)
+    
+print(round_to_two_places(9.9999))
+
+#5
+from learntools.core import binder; binder.bind(globals())
+from learntools.python.ex2 import *
+def round_to_two_places(num):
+     return round(num,2)
+    
+print(round_to_two_places(9.9999))
+
+
+
